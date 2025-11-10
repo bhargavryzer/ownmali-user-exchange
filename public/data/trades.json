@@ -1,0 +1,52 @@
+{
+  "properties": [
+    {
+      "id": 1,
+      "symbol": "PROP1",
+      "name": "Sunset Villa Estate",
+      "type": "Residential",
+      "currentPrice": 125000,
+      "priceChange24h": 2.5,
+      "high24h": 127500,
+      "low24h": 123000,
+      "volume24h": 450000,
+      "marketCap": 15000000
+    },
+    {
+      "id": 2,
+      "symbol": "PROP2",
+      "name": "Downtown Office Complex",
+      "type": "Commercial",
+      "currentPrice": 350000,
+      "priceChange24h": -1.2,
+      "high24h": 355000,
+      "low24h": 348000,
+      "volume24h": 890000,
+      "marketCap": 42000000
+    },
+    {
+      "id": 3,
+      "symbol": "PROP3",
+      "name": "Riverside Apartments",
+      "type": "Residential",
+      "currentPrice": 85000,
+      "priceChange24h": 3.8,
+      "high24h": 86500,
+      "low24h": 83000,
+      "volume24h": 320000,
+      "marketCap": 9500000
+    },
+    {
+      "id": 4,
+      "symbol": "PROP4",
+      "name": "Tech Park Plaza",
+      "type": "Commercial",
+      "currentPrice": 280000,
+      "priceChange24h": 1.5,
+      "high24h": 283000,
+      "low24h": 276000,
+      "volume24h": 670000,
+      "marketCap": 28000000
+    }
+  ]
+}

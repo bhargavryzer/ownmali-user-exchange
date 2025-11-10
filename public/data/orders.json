@@ -1,0 +1,44 @@
+{
+  "orders": [
+    {
+      "id": 1,
+      "symbol": "PROP1",
+      "type": "buy",
+      "price": 124500,
+      "amount": 2,
+      "total": 249000,
+      "status": "completed",
+      "date": "2025-11-07T10:30:00Z"
+    },
+    {
+      "id": 2,
+      "symbol": "PROP2",
+      "type": "sell",
+      "price": 351000,
+      "amount": 1,
+      "total": 351000,
+      "status": "completed",
+      "date": "2025-11-07T09:15:00Z"
+    },
+    {
+      "id": 3,
+      "symbol": "PROP3",
+      "type": "buy",
+      "price": 84000,
+      "amount": 3,
+      "total": 252000,
+      "status": "pending",
+      "date": "2025-11-07T11:45:00Z"
+    },
+    {
+      "id": 4,
+      "symbol": "PROP4",
+      "type": "sell",
+      "price": 279500,
+      "amount": 2,
+      "total": 559000,
+      "status": "completed",
+      "date": "2025-11-07T08:20:00Z"
+    }
+  ]
+}

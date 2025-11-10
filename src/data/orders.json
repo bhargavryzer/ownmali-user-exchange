@@ -1,0 +1,64 @@
+{
+  "openOrders": [
+    {
+      "id": "ORD-2024-001",
+      "symbol": "KAREN-RES-01",
+      "propertyName": "Karen Luxury Apartments",
+      "location": "Karen, Nairobi",
+      "category": "Hotels",
+      "type": "Buy",
+      "price": 125000,
+      "amount": 50,
+      "filled": 25,
+      "total": 6250000,
+      "status": "partial",
+      "date": "2024-11-05T10:30:00",
+      "tokenValue": "KES 125,000 per token"
+    },
+    {
+      "id": "ORD-2024-002",
+      "symbol": "WESTLANDS-COM-03",
+      "propertyName": "Westlands Commercial Tower",
+      "location": "Westlands, Nairobi",
+      "category": "Hospitals",
+      "type": "Buy",
+      "price": 250000,
+      "amount": 20,
+      "filled": 0,
+      "total": 5000000,
+      "status": "pending",
+      "date": "2024-11-06T14:15:00",
+      "tokenValue": "KES 250,000 per token"
+    }
+  ],
+  "orderHistory": [
+    {
+      "id": "ORD-2024-H001",
+      "symbol": "LAVINGTON-RES-05",
+      "propertyName": "Lavington Garden Suites",
+      "location": "Lavington, Nairobi",
+      "category": "Hotels",
+      "type": "Buy",
+      "price": 150000,
+      "amount": 40,
+      "total": 6000000,
+      "status": "filled",
+      "date": "2024-10-28T13:20:00",
+      "tokenValue": "KES 150,000 per token"
+    },
+    {
+      "id": "ORD-2024-H002",
+      "symbol": "MOMBASA-COM-02",
+      "propertyName": "Mombasa Business Plaza",
+      "location": "Mombasa City",
+      "category": "Hospitals",
+      "type": "Sell",
+      "price": 220000,
+      "amount": 25,
+      "total": 5500000,
+      "status": "filled",
+      "date": "2024-10-25T16:45:00",
+      "tokenValue": "KES 220,000 per token"
+    }
+  ]
+}
