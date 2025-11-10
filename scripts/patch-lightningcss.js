@@ -3,7 +3,8 @@ const path = require('path');
 
 const pkgDir = path.join(__dirname, '..', 'node_modules', 'lightningcss', 'pkg');
 const target = path.join(pkgDir, 'index.js');
-const content = "module.exports = require('lightningcss-wasm/wasm-node.cjs');\n";
+
+const content = "module.exports = require('lightningcss-wasm');\n";
 
 try {
   if (!fs.existsSync(pkgDir)) {
