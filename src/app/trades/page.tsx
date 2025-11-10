@@ -7,7 +7,7 @@ import { Input } from '@/components/ui/input';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Badge } from '@/components/ui/badge';
 import { ArrowUpRight, ArrowDownRight, TrendingUp, ArrowLeft, BarChart2, LineChart as LineChartIcon, Eye, EyeOff, Star, Smile, Meh, Frown } from 'lucide-react';
-import { StockChart } from '@/components/StockChart';
+import { LightweightChart } from '@/components/LightweightChart';
 import { format } from 'date-fns';
 import { toast } from 'sonner';
 import {
@@ -511,12 +511,10 @@ export default function Trading() {
               <CardContent className="p-0">
                 <div className="h-[500px] px-6 py-6">
                   <div className="w-full">
-                    <StockChart 
+                    <LightweightChart 
                       data={chartData} 
                       width={800} 
                       height={500}
-                      ratio={1} 
-                      type="hybrid"
                     />
                   </div>
                 </div>
