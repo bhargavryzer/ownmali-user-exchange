@@ -1,14 +1,14 @@
 'use client';
 
-import * as LightweightCharts from 'lightweight-charts';
+import { 
+  createChart,
+  CandlestickSeries
+} from 'lightweight-charts';
 import type {
+  IChartApi,
+  DeepPartial,
   ChartOptions,
   UTCTimestamp,
-  DeepPartial,
-  IChartApi,
-  GridLineOptions,
-  TimeScaleOptions,
-  PriceScaleOptions,
 } from 'lightweight-charts';
 import React, { useEffect, useRef } from 'react';
 
@@ -85,22 +85,12 @@ export const LightweightChart = ({
       },
     };
     
-    const chart = LightweightCharts.createChart(
+    const chart = createChart(
       chartContainerRef.current,
       chartOptions
     );
 
-    // Type assertion to access the candlestick series method.
-    // Use a runtime guard because ESM/CJS interop can sometimes change imports.
-    if (typeof (chart as any)?.addCandlestickSeries !== 'function') {
-      // If the method is missing, log a helpful warning and bail out gracefully.
-      // This avoids the runtime TypeError and surfaces the shape of the chart object.
-      // eslint-disable-next-line no-console
-      console.warn('LightweightChart: addCandlestickSeries is not available on chart object', chart);
-      return;
-    }
-
-    const candleSeries = (chart as any).addCandlestickSeries({
+    const candleSeries = chart.addSeries(CandlestickSeries, {
       upColor: '#26a69a',
       downColor: '#ef5350',
       borderVisible: false,
